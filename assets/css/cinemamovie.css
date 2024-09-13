@@ -1,0 +1,409 @@
+:root {
+  --main-color: #c0392b;
+  --body-bg: #181616;
+  --box-bg: #221f1f;
+  --text-color: #ffffff;
+  --nav-height: 60px;
+  --space-tot: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  padding-top: var(--nav-height);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-color,
+.fa-solid {
+  color: var(--main-color);
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 40px;
+  margin: auto;
+}
+
+.overly {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #000000;
+
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+  height: 120px;
+}
+
+.nav a {
+  color: var(--text-color);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-menu li~li {
+  margin-left: 30px;
+}
+
+.nav-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-menu a:hover {
+  color: var(--main-color);
+}
+
+a.logo:hover {
+  color: unset;
+}
+
+.nav-menu a.btn:hover {
+  color: unset;
+}
+
+
+.btn {
+  color: #ffffff;
+  padding: 13px 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.btn-hover::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: .3s ease-in-out
+}
+
+.btn-hover:hover::before {
+  width: 100%;
+}
+
+.btn.a i .fa-solid,
+.btn span {
+  z-index: 1
+}
+
+.btn i {
+  margin-right: 10px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  #movidata{
+    display: flex;
+  }
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 22px;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 150px;
+  }
+  
+  header nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Style for cinema data container */
+  #cinemadata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Style for cinema card */
+  .cinemaCard {
+    width: calc(20% - 20px);
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    padding: 20px;
+    /* transition: transform 0.3s ease; */
+    box-sizing: border-box;
+    margin: 50px;
+    margin-top: 200px;
+  }
+  
+  .cinemaCard:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 5px 15px rgba(59, 59, 59, 0.3); */
+  }
+  
+  .cinemaCard>div {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: white;
+  }
+  
+  .cinemaCard p {
+    margin: 20px 0;
+    color:white;
+    font-weight: bold;
+  }
+  
+  /* Style for cinema card image */
+  .cinemaCard img {
+    width: 100%;
+    height: auto;
+    height: 72%;
+    border-radius: 8px;
+  }
+  
+  #movieData{
+  display: flex;
+  }
+  
+  
+
+footer .logo {
+  margin-top: -2.5rem;
+  color: white;
+}
+
+footer .section {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background-color: var(--box-bg);
+}
+
+footer a:hover {
+  color: var(--main-color);
+}
+
+.footer content .logo span {
+  color: var(--main-color);
+}
+
+footer a.logo:hover {
+  color: unset;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.social-item {
+  --size: 30px;
+  height: var(--size);
+  width: var(--size);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+.social-item:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.social-item~.social-item {
+  margin-left: 20px;
+}
+
+footer .content {
+  margin-top: 20px;
+}
+
+.footer-menu {
+  display: inline-block;
+}
+
+.footer-menu a:hover {
+  transform: translateX(5px);
+}
+
+footer p {
+  padding: 0 40px 0 0;
+  max-width: 544px;
+}
+
+footer ul li a {
+  color: white;
+  line-height: 27px;
+
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.footer-menu {
+  margin-top: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  border-top: 1px solid var(--body-bg);
+  background-color: var(--box-bg);
+  text-align: center;
+
+}
+
+.copyright a {
+  color: white;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 60%;
+      object-fit: cover;
+      margin-top: 20px;
+}
+
+.movieCard,.cinemaCard{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 10px;
+  width: 363px;
+  height: 450px;
+  display: inline-block;
+  color: white;
+
+}
+.movieCard p{
+  margin-top: 20px;
+}
+.movieCard img{
+  height: 315px;
+  
+}
+.cinemaCard {
+  height: 459px;
+  margin-top: 110px;
+}
+.cinemaCard p{
+  margin: 21px;
+}
+.cinema{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 10px;
+  width: 363px;
+  height: 500px;
+  display: inline-block;
+  color: white;
+}
+
+.cinema p{
+  margin-top: 10px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  color: white;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  color: white;
+}
+
+.fotter-dessign{
+  display: flex;
+  column-gap: 100px;
+}

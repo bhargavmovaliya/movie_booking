@@ -1,0 +1,76 @@
+.movietime{
+    margin-top: -505px;
+    margin-left: 30%;
+}
+.movietime h4{
+    font-size: 30px;
+    color: brown;
+}
+h4{
+    padding-left: 316px;
+    margin-top: 95px;
+
+}
+#time label{
+    font-size: 20px;
+}
+
+#time{
+    padding-left: 25%;
+}
+#disp{
+    width: 77%;
+    padding-left: 20%;
+}
+.btn{
+    padding: 8px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+#menu1{
+ margin: 100px 0;
+ font-size: 25px;
+ line-height: 65px;
+ display: inline-block;
+
+ background-color: brown ;
+ padding: 85px 48px 225px 48px;
+}
+#menu1 a{
+    color: white;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #710000;
+    padding-top: 20px;
+}
+
+#sidebar a {
+    padding: 4px 8px 8px 32px;
+text-decoration: none;
+font-size: 18px;
+color: #818181;
+display: block;
+margin-top: 19px;
+}
+
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#content #right{
+    margin-left: 342px;
+    margin-top: -225px;
+}

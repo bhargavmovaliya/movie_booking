@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/seat.css">
+</head>
+
+<body>
+  <div id="sidebar">
+    <a href="../admin/registeruser.html">ADMIN</a>
+    <a href="../admin/cinemaadmin.html">CINEMA</a>
+    <a href="../admin/movie.html">MOVIE</a>
+    <a href="../admin/time.html">TIME</a>
+    <a href="seat.html">SEAT</a>
+
+
+    <div id="content">
+      <section id="right">
+        <div class="add-cinema-form">
+          <h4>Seat </h4><br>
+          <form action="" id="setForm">
+            <input type="hidden" name="id" id="id">
+            <!-- <label for="">select cinema</label> -->
+            <br>
+            <select name="" id="cinema_name"></select>
+            <br><br>
+            <!-- <label for="">select movie</label> -->
+            <br>
+    
+            <select name="" id="movie_data"></select>
+            <br><br>
+    
+            <!-- <label for="">select movie Time</label> -->
+            <br>
+    
+            <select name="" id="movie_time"></select>
+    
+            <br><br>
+            <input type="text" placeholder="Enter Seat Number" id="seat_id" name="seat"><br><br>
+            <input type="number" placeholder="price" id="price" name="price">
+            <br><br>
+    
+            <input type="submit" id="submit">
+        </form>
+        <br><br>
+          <div id="disp"></div>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+  <script src="../assets/js/seat.js"></script>
+</body>
+
+</html>

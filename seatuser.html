@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/seatuser.css">
+</head>
+<style>
+    .seatdesign {
+        margin: 9px;
+        font-size: 16px;
+        width: 63px;
+        height: 42px;
+        border-radius: 10px 10px 0px 0;
+        color: skyblue;
+        background-color: transparent;
+
+    }
+
+    .seatdesign:hover {
+        background-color: skyblue;
+        color: rgb(78, 78, 78);
+    }
+
+    #disp {
+        margin-top: 169px;
+        margin-bottom: 53px;
+    }
+
+    .button {
+        height: 39px;
+        width: 113px;
+        margin: 21px;
+        background-color: brown;
+    }
+
+    .lbl {
+        margin: 21px;
+    }
+
+    #price {
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="adminside/admin.html" class="logo">
+                    <i class="fa-solid fa-film"></i>Fl<span class="main-color">i</span>x
+
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="movielist.html">MOVIE list</a></li>
+                    <li><a href="cinemalist.html">CINEMA List</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li>
+                        <a href="register.html" class="btn btn-hover">
+                            <span>Sing in</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="disp"></div>
+    <form action="" onsubmit="handalbtn()">
+        <span class="lbl">Total Price:</span>
+        <div id="price"></div><br><br>
+        <input type="submit" value="BOOK NOW" class="button">
+    </form>
+
+
+    <script src="./assets/js/seatuser.js"></script>
+</body>
+
+</html>
